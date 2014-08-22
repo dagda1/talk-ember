@@ -6066,6 +6066,8 @@ p:last-of-type{
   -webkit-animation-duration: 1s;
 }
 
-
+.home-link {
+  margin-bottom: 10px !IMPORTANT;
+}
 
 /*# sourceMappingURL=app.css.map*/
