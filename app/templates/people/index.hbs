@@ -1,0 +1,14 @@
+<h1>Here is a list of everyone, and there are {{length}} people!</h1>
+<div class="home-link">
+  {{#link-to "index"}}Home{{/link-to}}
+</div>
+<table class="table table.striped">
+  <tbody>
+    {{#each controller}}
+    <tr>
+      <td>{{#link-to "person" this}}{{fullName}}{{/link-to}}</td>
+      <td>{{age}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
