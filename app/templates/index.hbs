@@ -1,14 +1,6 @@
 <h1>Hello Northern Anglo Saxons! {{isAngry}}</h1>
-{{#with model}}
-<p>Your foreign speaker is <strong>{{fullName}}</strong> who is {{age}}.</p>
-<p {{bind-attr class="isAngry:warn"}}>{{firstName}} is currently <label {{bind-attr class=":label isCalm:label-success:label-important"}}>{{mood}}</label>.</p>
-<p>
-{{#if isOld}}
-  {{fullName}} is an old git!
-{{else}}
-  {{fullName}} is a noob!
-{{/if}}
-</p>
+<p>Your presenter is <strong>Paul Cowan</strong> who is 42.</p>
+<p>Paul is currently <label class="label label-success">calm</label></p>
 <hr/>
 <form class="form-horizontal">
   <fieldset>
@@ -16,27 +8,26 @@
     <div class="control-group">
       <label class="control-label">First Name</label>
       <div class="controls">
-        {{input value=firstName}}
+        <input type="text" class="input-xlarge" value="Paul">
       </div>
     </div>
     <div class="control-group">
       <label class="control-label">Surname</label>
       <div class="controls">
-        {{input value=surname}}
+        <input type="text" class="input-xlarge" value="Cowan">
       </div>
     </div>
     <div class="control-group">
       <label class="control-label">Age</label>
       <div class="controls">
-        {{input value=age type="number"}}
+        <input type="number" value="42"/>
       </div>
     </div>
     <div class="control-group">
       <label class="control-label">Mood</label>
       <div class="controls">
-        {{input value=mood}}
+        <input type="text" class="input-xlarge" value="calm">
       </div>
     </div>
   </fieldset>
 </form>
-{{/with}}
